@@ -1,0 +1,75 @@
+.wrap {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.group label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+}
+
+.group select,
+.group input {
+  padding: 8px 12px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  color: var(--gray-900);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.group select:focus,
+.group input:focus {
+  border-color: var(--primary);
+}
+
+.presets {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.preset, .activePreset {
+  padding: 6px 13px;
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.15s;
+  border: 1.5px solid var(--gray-200);
+}
+
+.preset {
+  background: var(--white);
+  color: var(--gray-600);
+}
+
+.preset:hover { background: var(--gray-50); }
+
+.activePreset {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.dateRange {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

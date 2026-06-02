@@ -1,0 +1,96 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardLabel {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+}
+
+.cardValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.cardSub {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.categories {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.sectionTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 16px;
+}
+
+.catRow {
+  margin-bottom: 14px;
+}
+.catRow:last-child { margin-bottom: 0; }
+
+.catHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.catName {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.catAmount {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+.catAmount small {
+  font-weight: 400;
+  color: var(--gray-400);
+}
+
+.over { color: var(--danger) !important; }
+
+.barBg {
+  height: 6px;
+  background: var(--gray-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
